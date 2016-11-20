@@ -21,32 +21,12 @@ body, input {
   font: menu;
 }
 
-textarea, input, div, button { outline: none; }
+textarea, input, div { outline: none; }
 
 .controls {
-  background-color: rgb(217, 241, 238);
   padding: 1em;
   position: fixed;
   width: 100%;
-}
-
-.controls button {
-  background-color: rgb(181, 220, 216);
-  border: none;
-  font-size: 1.1em;
-  padding: 0.5em 1em;
-}
-
-.controls button:hover {
-  background-color: rgb(156, 198, 192);
-}
-
-.controls button:active {
-  background-color: rgb(144, 182, 177);
-}
-
-.controls button:disabled {
-  background-color: rgb(196, 204, 202);
 }
 
 .content {
@@ -69,4 +49,10 @@ textarea, input, div, button { outline: none; }
   background-color: rgb(238, 252, 250);
   font-family: monospace;
   white-space: pre;
+}
+
+.rendered-html section {
+  border: solid 1px black;
+  padding: 1em;
+  margin-bottom: 2em;
 }
