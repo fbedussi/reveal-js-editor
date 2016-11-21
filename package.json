@@ -1,5 +1,5 @@
 {
-  "name": "reveal-markdown",
+  "name": "reveal-js-editor",
   "description": "A cross platform editor to author reveal.js presentation in markdown",
   "version": "1.0.0",
   "author": {
@@ -11,8 +11,6 @@
     "url": "https://github.com/fbedussi/reveal-md/issues"
   },
   "dependencies": {
-    "drag-drop": "^2.12.1",
-    "jquery": "^3.1.1",
     "markdown-it": "^8.1.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^2.0.0",
@@ -37,8 +35,8 @@
     "url": "git://github.com/fbedussi/reveal-md.git"
   },
   "scripts": {
-    "package": "electron-packager . 'Markdown Editor'",
-    "package-all": "electron-packager . 'Markdown Editor' --platform=all --arch=all",
+    "package": "electron-packager . 'Reveak Editor'",
+    "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
     "start": "electron ."
   }
 }
