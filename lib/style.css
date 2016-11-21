@@ -6,6 +6,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: white;
 }
 
 *, *:before, *:after {
@@ -55,4 +56,17 @@ textarea, input, div { outline: none; }
   border: solid 1px black;
   padding: 1em;
   margin-bottom: 2em;
+}
+
+.preview {
+  display: none;
+}
+
+.previewOn .editor {
+  display: none;
+}
+
+.previewOn .preview {
+  display: block;
+  height: 100%;
 }

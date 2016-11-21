@@ -15,7 +15,7 @@ Each slide must be enclosed between `:::slide` and `:::`.
 - Older people (ourselve tomorrow)
 :::
 ````
-to nest slides and get vertical slides nest the outer slide markup must have one more `:` than the inner one, e.g.:
+to nest slides and get vertical slides ﾠthe outer slide markup must have one more `:` than the inner one, e.g.:
 ````
 ::::slide
 :::slide

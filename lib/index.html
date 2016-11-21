@@ -1,29 +1,44 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Markdown Editor</title>
+    
     <link rel="stylesheet" href="style.css" type="text/css">
-  </head>
-  <body>
+</head>
 
-    <section class="controls">
-      <button id="open-file">Open File</button>
-      <button id="copy-html">Copy HTML</button>
-      <button id="save-md">Save MD</button>
-      <button id="save-file">Save HTML</button>
-      <button id="show-in-file-system" disabled="true">Show in File System</button>
-      <button id="open-in-default-editor" disabled="true">Open in Default Editor</button>
+<body>
+    <section class="editor">
+        <section class="controls">
+            <button id="open-file">Open File</button>
+            <button id="copy-html">Copy HTML</button>
+            <button id="save-md">Save MD</button>
+            <button id="save-file">Save HTML</button>
+            <button id="show-in-file-system" disabled="true">Show in File System</button>
+            <button id="open-in-default-editor" disabled="true">Open in Default Editor</button>
+        </section>
+
+        <section class="content">
+            <textarea class="raw-markdown"></textarea>
+            <div class="rendered-html"></div>
+        </section>
     </section>
+    <section class="preview">
+        <div class="reveal">
+            <div class="slides">
 
-    <section class="content">
-      <textarea class="raw-markdown"></textarea>
-      <div class="rendered-html"></div>
+            </div>
+        </div>
+
     </section>
-
-  </body>
-  <script>
+    
+    <script src="../node_modules/reveal.js/lib/js/head.min.js"></script>
+		<script src="../node_modules/reveal.js/js/reveal.js"></script>
+</body>
+<script>
     require('./renderer')
-  </script>
+</script>
+
 </html>
