@@ -8,30 +8,40 @@
 <body>
 
 <form>
-    <label>Auto play velocityy (0 to disable)
-        <input id="autoSlideVelocity" type="number" />
-    </label>
-    <label>Parallax background size (CSS syntax, e.g. "2100px 900px")
+    <div class="autoSlideWrapper">
+        <label for="autoSlide"><span class="icon"></span>Auto play velocity (0 to disable)</label>
+        <input id="autoSlide" type="number" />
+    </div>
+    <div class="parallaxBackgroundSizeWrapper">
+        <label for="parallaxBackgroundSize"><span class="icon"></span>Parallax background size (CSS syntax, e.g. "2100px 900px")</label>
         <input id="parallaxBackgroundSize" type="string" />        
-    </label>
-    <label>Number of pixels to move the parallax background per slide.<br>
-    <ul>
-        <li>
-           Calculated automatically unless specified
-        </li>
-        <li>
-            Set to 0 to disable movement along an axis
-        </li>
-    </ul>
-    Horizontal
-    <input id="parallaxBackgroundHorizontal" type="number" />
-    </label>
-    <label>Vertical
-        <input id="parallaxBackgroundVertical" type="number" />
-    </label>
-
-    
+    </div>
+    <div class="parallaxBackfroundWrapper">
+        <p>Number of pixels to move the parallax background per slide.</p>
+        <ul>
+            <li>
+               Calculated automatically unless specified
+            </li>
+            <li>
+                Set to 0 to disable movement along an axis
+            </li>
+        </ul>
+        <div>
+            <label for="parallaxBackgroundHorizontal"><span class="icon"></span>Horizontal</label>
+            <input id="parallaxBackgroundHorizontal" type="number" />            
+        </div>
+        <div>
+            <label for="parallaxBackgroundVertical">Vertical</label>
+            <input id="parallaxBackgroundVertical" type="number" />            
+        </div>
+    </div>
+    <div class="buttonRow">
+        <button id="resetOptionsButton" type="reset">Cancel</button>
+        <button id="applyOptionsButton" type="submit">Save</button>        
+    </div>
 </form>
-
 </body>
+<script>
+    require('./rendererOptions')
+</script>
 </html>
