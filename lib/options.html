@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>Reveal.js editor - Options</title>
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -12,11 +14,20 @@
         <label for="autoSlide"><span class="icon"></span>Auto play velocity (0 to disable)</label>
         <input id="autoSlide" type="number" />
     </div>
+    <div class="viewDistanceWrapper">
+        <label for="viewDistance"><span class="icon"></span>Number of slides away from the current that are visible</label>
+        <input id="viewDistance" type="number" />        
+    </div>
     <div class="parallaxBackgroundSizeWrapper">
         <label for="parallaxBackgroundSize"><span class="icon"></span>Parallax background size (CSS syntax, e.g. "2100px 900px")</label>
         <input id="parallaxBackgroundSize" type="string" />        
     </div>
-    <div class="parallaxBackfroundWrapper">
+    <div class="parallaxBackgroundImageWrapper">
+        <label for="parallaxBackgroundImage"><span class="icon"></span>Parallax background image</label>
+        <input id="parallaxBackgroundImage" type="file" />        
+    </div>
+    
+    <div class="parallaxBackgroundWrapper">
         <p>Number of pixels to move the parallax background per slide.</p>
         <ul>
             <li>
