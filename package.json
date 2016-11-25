@@ -11,6 +11,7 @@
     "url": "https://github.com/fbedussi/reveal-md/issues"
   },
   "dependencies": {
+    "fs-extra": "^1.0.0",
     "markdown-it": "^8.1.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^2.0.0",
