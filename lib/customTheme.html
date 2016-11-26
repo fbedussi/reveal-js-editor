@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Reveal.js editor - Custom theme</title>
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<form>
+    <!--<div class="customThemeNameWrapper">
+        <label for="customThemeFile"><span class="icon"></span>Parallax background image</label>
+        <input id="customThemeFile" type="file" />        
+    </div>
+    -->
+    <div class="customThemeFileWrapper">
+        <label for="customThemeFile"><span class="icon"></span><span class="text">CSS file for custom theme</span></label>
+        <input id="customThemeFile" type="file" />        
+    </div>
+    
+    <div class="buttonRow">
+        <button id="resetButton" type="reset"><span class="icon"></span><span class="text">Cancel</span></button>
+        <button id="applyButton" type="submit"><span class="icon"></span><span class="text">Save</span></button>        
+    </div>
+</form>
+</body>
+<script>
+    require('./rendererCustomTheme')
+</script>
+</html>
