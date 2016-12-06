@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Reveal.js editor - Background</title>
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<form>
+    <div class="colorWrapper">
+        <label for="colorBg"><span class="icon"></span><span class="text">Background color</span></label>
+        <input id="colorBg" type="color" data-insert="data-background-color"/>
+    </div>
+    
+    <div class="imageBgWrapper">
+        <label for="imageBg"><span class="icon"></span><span class="text">Background image</span></label>
+        <input id="imageBg" type="file" data-insert="data-background-image"/>        
+    </div>
+    
+    <div class="bgSizeWrapper">
+        <label><span class="icon"></span><span class="text">Background size</span>
+            <select class="bgSize" id=bgSizeSelect data-insert="data-background-size">
+                <option>cover</option>
+                <option>contain</option>
+            </select>
+            <input type="text" placeholder="es: 3em, 10%, ecc." class="bgSize" id="bgSizeText" data-insert="data-background-size"/>        
+        </label>
+    </div>
+    
+    <div class="bgPositionXWrapper">
+        <label for="bgPositionX"><span class="icon"></span><span class="text">Background position x</span></label>
+        <select id="bgPositionX" data-insert="data-background-position">
+            <option>left</option>
+            <option>center</option>
+            <option>right</option>
+        </select>
+    </div>
+    
+    <div class="bgPositionYWrapper">
+        <label for="bgPositionY"><span class="icon"></span><span class="text">Background position y</span></label>
+        <select id="bgPositionY">
+            <option>top</option>
+            <option>center</option>
+            <option>bottom</option>
+        </select>
+    </div>
+    
+    <div class="bgRepeatWrapper">
+        <label for="bgRepeat"><span class="icon"></span><span class="text">Background repeat</span></label>
+        <select id="bgRepeat" data-insert="data-background-repeat">
+            <option>repeat</option>
+            <option>repeat-x</option>
+            <option>repeat-y</option>
+            <option>no-repeat</option>
+            <option>inherit</option>
+        </select>
+    </div>
+    
+    <div class="videoBgWrapper">
+        <label for="videoBg"><span class="icon"></span><span class="text">Background video</span></label>
+        <input id="videoBg" type="file" data-insert="data-background-video"/>        
+    </div>
+    
+    <div class="videoBgLoopWrapper">
+        <input id="videoBgLoop" type="checkbox" data-insert="data-background-video-loop"/>        
+        <label for="videoBgLoop"><span class="icon"></span><span class="text">Background video loop</span></label>
+    </div>
+    
+    <div class="videoBgMutedWrapper">
+        <input id="videoBgMuted" type="checkbox" data-insert="data-background-video-muted"/>        
+        <label for="videoBgMuted"><span class="icon"></span><span class="text">Background video muted</span></label>
+    </div>
+    
+    <div class="iframeBgWrapper">
+        <label for="iframeBg"><span class="icon"></span><span class="text">Background web page</span></label>
+        <input id="iframeBg" type="text" placeholder="http://www.example.com" data-insert="data-background-iframe"/>        
+    </div>
+    
+    <div class="buttonRow">
+        <button id="resetButton" type="reset">Cancel</button>
+        <button id="applyButton" type="submit">Save</button>        
+    </div>
+    
+</form>
+</body>
+<script>
+    require('./rendererBackground')
+</script>
+</html>
