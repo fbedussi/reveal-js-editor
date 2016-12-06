@@ -21,40 +21,37 @@
     </div>
     
     <div class="bgSizeWrapper">
-        <label><span class="icon"></span><span class="text">Background size</span>
-            <select class="bgSize" id=bgSizeSelect data-insert="data-background-size">
-                <option>cover</option>
-                <option>contain</option>
-            </select>
-            <input type="text" placeholder="es: 3em, 10%, ecc." class="bgSize" id="bgSizeText" data-insert="data-background-size"/>        
+        <label for="bgSize"><span class="icon"></span><span class="text">Background size</span>
+            <input type="text" placeholder="es: cover, contain, 3em, 10%, ecc." value="cover" id="bgSize" data-insert="data-background-size"/>        
         </label>
     </div>
     
     <div class="bgPositionXWrapper">
         <label for="bgPositionX"><span class="icon"></span><span class="text">Background position x</span></label>
-        <select id="bgPositionX" data-insert="data-background-position">
-            <option>left</option>
+        <select id="bgPositionX" class="bgPositionPartial">
             <option>center</option>
+            <option>left</option>
             <option>right</option>
         </select>
     </div>
     
     <div class="bgPositionYWrapper">
         <label for="bgPositionY"><span class="icon"></span><span class="text">Background position y</span></label>
-        <select id="bgPositionY">
-            <option>top</option>
+        <select id="bgPositionY" class="bgPositionPartial">
             <option>center</option>
+            <option>top</option>
             <option>bottom</option>
         </select>
     </div>
+    <input id="bgPosition" type="text" hidden="true" data-insert="data-background-position"/>
     
     <div class="bgRepeatWrapper">
         <label for="bgRepeat"><span class="icon"></span><span class="text">Background repeat</span></label>
         <select id="bgRepeat" data-insert="data-background-repeat">
+            <option>no-repeat</option>
             <option>repeat</option>
             <option>repeat-x</option>
             <option>repeat-y</option>
-            <option>no-repeat</option>
             <option>inherit</option>
         </select>
     </div>
