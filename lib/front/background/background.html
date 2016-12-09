@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Reveal.js editor - Background</title>
+    <title>Reveal.js markdown editor - Background</title>
     
     <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
@@ -18,7 +18,8 @@
     <div class="imageBgWrapper">
         <label for="imageBg"><span class="icon"></span><span class="text">Background image</span></label>
         <button id="imageBgButton">Select image</button>
-        <input id="imageBg" type="text" data-insert="background-image" placeholder="file path"/>        
+        <input id="imageBg" type="text" data-insert="background-image" placeholder="file path"/>
+        <button class="resetInput" data-input-id="imageBg">Reset</button>
     </div>
     
     <div class="bgSizeWrapper">
@@ -59,22 +60,25 @@
     
     <div class="videoBgWrapper">
         <label for="videoBg"><span class="icon"></span><span class="text">Background video</span></label>
-        <input id="videoBg" type="file" data-insert="background-video"/>        
+        <button id="videoBgButton">Select video</button>
+        <input id="videoBg" type="text" data-insert="background-video" placeholder="file path"/>
+        <button class="resetInput" data-input-id="videoBg">Reset</button>
     </div>
     
     <div class="videoBgLoopWrapper">
-        <input id="videoBgLoop" type="checkbox" data-insert="background-video-loop"/>        
+        <input id="videoBgLoop" type="checkbox" data-insert="background-video-loop" disabled="true"/>        
         <label for="videoBgLoop"><span class="icon"></span><span class="text">Background video loop</span></label>
     </div>
     
     <div class="videoBgMutedWrapper">
-        <input id="videoBgMuted" type="checkbox" data-insert="background-video-muted"/>        
+        <input id="videoBgMuted" type="checkbox" data-insert="background-video-muted" disabled="true"/>        
         <label for="videoBgMuted"><span class="icon"></span><span class="text">Background video muted</span></label>
     </div>
     
     <div class="iframeBgWrapper">
         <label for="iframeBg"><span class="icon"></span><span class="text">Background web page</span></label>
-        <input id="iframeBg" type="text" placeholder="http://www.example.com" data-insert="background-iframe"/>        
+        <input id="iframeBg" type="text" placeholder="http://www.example.com" data-insert="background-iframe"/>
+        <button class="resetInput" data-input-id="iframeBg">Reset</button>
     </div>
     
     <div class="buttonRow">
