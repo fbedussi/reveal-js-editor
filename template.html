@@ -51,8 +51,16 @@
 		<script>
 
 			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize(<!--[CONFIGURATION]-->);
-
+			{
+				let configuration = <!--[CONFIGURATION]-->;
+				configuration.dependencies = [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				];
+				Reveal.initialize(configuration);
+			}
 		</script>
 
 	</body>
