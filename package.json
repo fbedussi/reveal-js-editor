@@ -11,6 +11,7 @@
     "url": "https://github.com/fbedussi/reveal-md/issues"
   },
   "dependencies": {
+    "electron-gettext": "0.0.1",
     "electron-spellchecker": "^0.6.1",
     "fs-extra": "^1.0.0",
     "markdown-it": "^8.1.0",

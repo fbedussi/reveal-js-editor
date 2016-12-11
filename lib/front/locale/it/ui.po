@@ -1,0 +1,3 @@
+
+msgid "Open file"
+msgstr "Apri file"
