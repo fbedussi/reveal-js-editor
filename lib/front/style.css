@@ -60,6 +60,10 @@ textarea, input, div { outline: none; }
   margin-bottom: 2em;
 }
 
+.rendered-html .notes {
+  border-top: solid 1px black;
+}
+
 .preview {
   display: none;
 }
