@@ -41,10 +41,9 @@ textarea, input, div { outline: none; }
 
 .raw-markdown, .rendered-html {
   margin-top: 2em;
-  max-width: 50%;
-  flex-grow: 1;
   padding: 1em;
   overflow-y: scroll;
+  flex: 1;
 }
 
 .raw-markdown {
