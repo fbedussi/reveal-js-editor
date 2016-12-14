@@ -12,9 +12,9 @@
     "Paste": "Incolla",
     "Select All": "Seleziona tutto",
     "Insert": "Inserisci",
-    "Slide": "Slide",
+    "Presentation slide": "Slide",
     "Nested slide": "Slide annidata",
-    "Insert image": "Inserisci immagine",
+    "Image": "Immagine",
     "Speakers note": "Note relatore",
     "Individual slide transition": "Transizione singola slide",
     "Slide": "Scorri",
@@ -31,5 +31,6 @@
     "Theme": "Tema",
     "Transition": "Transizione",
     "None": "Nessuna",
-    "Configuration": "Configurazione"
+    "Configuration": "Configurazione",
+    "Preview": "Anteprima"
 }
