@@ -30,7 +30,7 @@ textarea, input, div { outline: none; }
 
 .controls {
   padding: 0.5em;
-  position: fixed;
+  position: relative;
   width: 100%;
 }
 
@@ -40,7 +40,6 @@ textarea, input, div { outline: none; }
 }
 
 .raw-markdown, .rendered-html {
-  margin-top: 2em;
   padding: 1em;
   overflow-y: scroll;
   flex: 1;

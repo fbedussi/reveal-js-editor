@@ -12,14 +12,23 @@
 <body>
     <section class="editor">
         <section class="controls">
-            <button id="open-file">Open File</button>
-            <button id="copy-html">Copy HTML</button>
-            <button id="save-md">Save MD</button>
-            <button id="save-file">Save HTML</button>
-            <button id="show-in-file-system" disabled="true">Show in File System</button>
-            <button id="open-in-default-editor" disabled="true">Open in Default Editor</button>
-			<input id="slide-color" type="color"/>
-			<button id="slide-color-apply">slide color</button>
+            <button id="open-file">Open markdown file</button>
+			<button id="savePresentation">
+				<span class="icon icon--savePresentation"></span>
+				<span class="button-text">Save presentation</span>
+			</button>
+			<button id="insertSlide">
+				<span class="icon icon--insertSlide"></span>
+				<span class="button-text">Insert slide</span>
+			</button>
+			<button id="insertImage">
+				<span class="icon icon--insertImage"></span>
+				<span class="button-text">Insert image</span>
+			</button>
+			<button id="previewWin">
+				<span class="icon icon--preview"></span>
+				<span class="button-text">Open preview window</span>
+			</button>
         </section>
 
         <section class="content">
@@ -33,7 +42,6 @@
 
             </div>
         </div>
-
     </section>
     
     <script src="../../node_modules/reveal.js/lib/js/head.min.js"></script>
