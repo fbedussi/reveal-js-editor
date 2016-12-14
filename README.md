@@ -1,6 +1,6 @@
-# Reveal.js markdown editor
+# REMEDI - REveal.js Mrkdown EDItor
 
-A cross platform editor (build upon the [electron framework](https://github.com/electron/electron)) to author [reveal.js](https://github.com/hakimel/reveal.js) presentation in markdown.
+REMEDI is a cross platform editor (build upon the [electron framework](https://github.com/electron/electron)) to author [reveal.js](https://github.com/hakimel/reveal.js) presentation in markdown.
 
 ## Syntax
 Each slide must be enclosed between `::::slide` and `::::`.
@@ -15,7 +15,7 @@ Each slide must be enclosed between `::::slide` and `::::`.
 - Older people (ourselve tomorrow)
 ::::
 ````
-to nest slides and get vertical slides ﾠthe inner slide markup must have 3 `:` instead of 4, e.g.:
+to nest slides and get vertical slides,ﾠthe inner slide markup must have 3 `:` instead of 4, e.g.:
 ````
 ::::slide
 :::slide
