@@ -34,6 +34,17 @@ textarea, input, div { outline: none; }
   width: 100%;
 }
 
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+.button-text {
+  vertical-align: middle;
+  padding: 0 0.5Sem;
+}
+
 .content {
   display: flex;
   height: 100%;
