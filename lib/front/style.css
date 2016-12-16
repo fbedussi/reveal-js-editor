@@ -24,6 +24,10 @@ body, input {
 
 textarea, input, div { outline: none; }
 
+button {
+  padding: 0;
+}
+
 .editor {
   height: 100%;
 }
@@ -42,7 +46,7 @@ textarea, input, div { outline: none; }
 
 .button-text {
   vertical-align: middle;
-  padding: 0 0.5Sem;
+  padding: 0 0.5em;
 }
 
 .content {
@@ -52,6 +56,20 @@ textarea, input, div { outline: none; }
 
 .mdContainer, .htmlContainer {
   flex: 1;
+}
+
+.tab {
+  border-bottom: solid 1px black;
+}
+
+.tab p {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1em;
+  border: solid 1px black;
+  border-radius: 3px 3px 0 0;
+  border-bottom: none;
+  margin: 0 0 0 0.5em;
 }
 
 .raw-markdown, .rendered-html {
@@ -65,8 +83,9 @@ textarea, input, div { outline: none; }
 .raw-markdown {
   font-size: 1.1em;
   border: none;
-  background-color: lightgrey;
+  background-color: rgb(240, 240, 240);
   font-family: monospace;
+  border-right: solid 1px black;
   /*white-space: pre;*/
 }
 
