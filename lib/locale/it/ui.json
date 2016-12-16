@@ -90,5 +90,9 @@
     "Opens links in an iframe preview overlay": "Apri i link in un iframe di preview in sovraimpressione",
     "Other configuration...": "Altre configurazioni...",
     "Set language": "Imposta lingua",
-    "Services": "Servizi"
+    "Services": "Servizi",
+    "Auto play velocity (0 to disable)": "Velocità autoplay (0 per disabilitare)",
+    "Number of slides preloaded in lazy load mode": "Numero di slide precaricate quando è attivo il lazy load",
+    "Parallax background size (CSS syntax, e.g. '2100px 900px')": "Dimensione dello sfondo in parallasse (Sintassi CSS, es. '2100px 900px')",
+    "Parallax background image": "Immagine di sfondo in parallasse"
 }
