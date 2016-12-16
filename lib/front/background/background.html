@@ -10,25 +10,25 @@
 <body>
 
 <form>
-    <div class="colorWrapper">
+    <div class="inputWrapper colorWrapper">
         <label for="colorBg"><span class="icon"></span><span class="text">Background color</span></label>
         <input id="colorBg" type="color" data-insert="background-color"/>
     </div>
     
-    <div class="imageBgWrapper">
+    <div class="inputWrapper imageBgWrapper">
         <label for="imageBg"><span class="icon"></span><span class="text">Background image</span></label>
-        <button id="imageBgButton">Select image</button>
+        <button id="imageBgButton"><span class="icon"></span><span class="text">Select image</span></button>
         <input id="imageBg" type="text" data-insert="background-image" placeholder="file path"/>
-        <button class="resetInput" data-input-id="imageBg">Reset</button>
+        <button class="resetInput" data-input-id="imageBg"><span class="icon"></span><span class="text">Reset</span></button>
     </div>
     
-    <div class="bgSizeWrapper">
+    <div class="inputWrapper bgSizeWrapper">
         <label for="bgSize"><span class="icon"></span><span class="text">Background size</span>
             <input type="text" placeholder="es: cover, contain, 3em, 10%, ecc." value="cover" id="bgSize" data-insert="background-size"/>        
         </label>
     </div>
     
-    <div class="bgPositionXWrapper">
+    <div class="inputWrapper bgPositionXWrapper">
         <label for="bgPositionX"><span class="icon"></span><span class="text">Background position x</span></label>
         <select id="bgPositionX" class="bgPositionPartial">
             <option>center</option>
@@ -37,7 +37,7 @@
         </select>
     </div>
     
-    <div class="bgPositionYWrapper">
+    <div class="inputWrapper bgPositionYWrapper">
         <label for="bgPositionY"><span class="icon"></span><span class="text">Background position y</span></label>
         <select id="bgPositionY" class="bgPositionPartial">
             <option>center</option>
@@ -47,7 +47,7 @@
     </div>
     <input id="bgPosition" type="text" hidden="true" data-insert="background-position"/>
     
-    <div class="bgRepeatWrapper">
+    <div class="inputWrapper bgRepeatWrapper">
         <label for="bgRepeat"><span class="icon"></span><span class="text">Background repeat</span></label>
         <select id="bgRepeat" data-insert="background-repeat">
             <option>no-repeat</option>
@@ -58,32 +58,32 @@
         </select>
     </div>
     
-    <div class="videoBgWrapper">
+    <div class="inputWrapper videoBgWrapper">
         <label for="videoBg"><span class="icon"></span><span class="text">Background video</span></label>
-        <button id="videoBgButton">Select video</button>
+        <button id="videoBgButton"><span class="icon"></span><span class="text">Select video</span></button>
         <input id="videoBg" type="text" data-insert="background-video" placeholder="file path"/>
-        <button class="resetInput" data-input-id="videoBg">Reset</button>
+        <button class="resetInput" data-input-id="videoBg"><span class="icon"></span><span class="text">Reset</span></button>
     </div>
     
-    <div class="videoBgLoopWrapper">
+    <div class="inputWrapper videoBgLoopWrapper">
         <input id="videoBgLoop" type="checkbox" data-insert="background-video-loop" disabled="true"/>        
         <label for="videoBgLoop"><span class="icon"></span><span class="text">Background video loop</span></label>
     </div>
     
-    <div class="videoBgMutedWrapper">
+    <div class="inputWrapper videoBgMutedWrapper">
         <input id="videoBgMuted" type="checkbox" data-insert="background-video-muted" disabled="true"/>        
         <label for="videoBgMuted"><span class="icon"></span><span class="text">Background video muted</span></label>
     </div>
     
-    <div class="iframeBgWrapper">
+    <div class="inputWrapper iframeBgWrapper">
         <label for="iframeBg"><span class="icon"></span><span class="text">Background web page</span></label>
         <input id="iframeBg" type="text" placeholder="http://www.example.com" data-insert="background-iframe"/>
-        <button class="resetInput" data-input-id="iframeBg">Reset</button>
+        <button class="resetInput" data-input-id="iframeBg"><span class="icon"></span><span class="text">Reset</span></button>
     </div>
     
     <div class="buttonRow">
-        <button id="resetButton" type="reset">Cancel</button>
-        <button id="applyButton" type="submit">Save</button>        
+        <button id="resetButton" type="reset"><span class="icon"></span><span class="text">Cancel</span></button>
+        <button id="applyButton" type="submit"><span class="icon"></span><span class="text">Save</span></button>        
     </div>
     
 </form>

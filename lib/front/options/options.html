@@ -10,51 +10,50 @@
 <body>
 
 <form>
-    <div class="autoSlideWrapper">
+    <div class="inputWrapper autoSlideWrapper">
         <label for="autoSlide"><span class="icon"></span><span class="text">Auto play velocity (0 to disable)</span></label>
         <input id="autoSlide" type="number" />
     </div>
-    <div class="viewDistanceWrapper">
+    <div class="inputWrapper viewDistanceWrapper">
         <label for="viewDistance"><span class="icon"></span><span class="text">Number of slides preloaded in lazy load mode (0 to disable lazy load)</span></label>
         <input id="viewDistance" type="number" />        
     </div>
-    <div class="parallaxBackgroundSizeWrapper">
+    <div class="inputWrapper parallaxBackgroundSizeWrapper">
         <label for="parallaxBackgroundSize"><span class="icon"></span><span class="text">Parallax background size (CSS syntax, e.g. "2100px 900px")</span></label>
         <input id="parallaxBackgroundSize" type="string" />        
     </div>
-    <div class="parallaxBackgroundImageWrapper">
+    <div class="inputWrapper parallaxBackgroundImageWrapper">
         <label for="parallaxBackgroundImage"><span class="icon"></span><span class="text">Parallax background image</span></label>
         <button id="parallaxBgImageButton"><span class="icon"></span><span class="text">Select file</span></button>
         <input id="parallaxBackgroundImage" type="text" placeholder="file path"/>
         <button id="parallaxBgImageReset"><span class="icon"></span><span class="text">Reset</span></button>
     </div>
     
-    <div class="parallaxBackgroundWrapper">
-        <p>Number of pixels to move the parallax background per slide.</p>
-        <ul>
-            <li>
-               Calculated automatically unless specified
-            </li>
-            <li>
-                Set to 0 to disable movement along an axis
-            </li>
-        </ul>
-        <div>
+    <div class="inputWrapper parallaxBackgroundWrapper">
+        <p class="text">Number of pixels to move the parallax background per slide</p>
+        <div class="parallaxBackgroundInputWrapper">
             <label for="parallaxBackgroundHorizontal"><span class="icon"></span><span class="text">Horizontal</span></label>
             <input id="parallaxBackgroundHorizontal" type="number" />            
         </div>
-        <div>
+        <div class="parallaxBackgroundInputWrapper">
             <label for="parallaxBackgroundVertical"><span class="icon"></span><span class="text">Vertical</span></label>
             <input id="parallaxBackgroundVertical" type="number" />            
         </div>
     </div>
     
-    <div class="keyboardWrapper">
+    <div class="inputWrapper keyboardWrapper">
+        <label for="keyboard"><span class="text">Keyboard custom mapping, eg:</span></label>
+        <div>
+        {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;13: 'next', // go to the next slide when the ENTER key is pressed<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;27: function() {}, // do something custom when ESC is pressed<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)<br>
+  }</div>
         <textarea id="keyboard"></textarea>
     </div>
     <div class="buttonRow">
-        <button id="resetOptionsButton" type="reset">Cancel</button>
-        <button id="applyOptionsButton" type="submit">Save</button>        
+        <button id="resetOptionsButton" type="reset"><span class="icon"></span><span class="text">Cancel</span></button>
+        <button id="applyOptionsButton" type="submit"><span class="icon"></span><span class="text">Save</span></button>        
     </div>
 </form>
 </body>
