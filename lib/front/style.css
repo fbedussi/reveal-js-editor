@@ -42,6 +42,8 @@ input[type="number"] {
 
 .editor {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .controls {
@@ -63,15 +65,18 @@ input[type="number"] {
 
 .content {
   display: flex;
-  height: 100%;
+  flex: 1;
 }
 
 .mdContainer, .htmlContainer {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .tab {
   border-bottom: solid 1px black;
+  height: 3.5em;
 }
 
 .tab p {
@@ -88,7 +93,7 @@ input[type="number"] {
   padding: 1em;
   overflow-y: scroll;
   width: 100%;
-  height: 100%;
+  flex: 1;
   display: block;
 }
 
