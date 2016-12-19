@@ -17,6 +17,7 @@
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^2.0.0",
     "markdown-it-modify-token": "^1.0.2",
+    "markdown-it-synapse-table": "^1.0.6",
     "reveal.js": "^3.3.0"
   },
   "devDependencies": {
