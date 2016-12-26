@@ -2,22 +2,19 @@
 
 <html>
 <head>
-    <title>Reveal.js editor - Custom theme</title>
+    <title>REMEDI - Reveal.js editor - Custom theme</title>
     
-    <link rel="stylesheet" href="../tyle.css" type="text/css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
 </head>
 
 <body>
 
 <form>
-    <!--<div class="customThemeNameWrapper">
-        <label for="customThemeFile"><span class="icon"></span>Parallax background image</label>
-        <input id="customThemeFile" type="file" />        
-    </div>
-    -->
-    <div class="customThemeFileWrapper">
+    <div class="inputWrapper customThemeFileWrapper">
         <label for="customThemeFile"><span class="icon"></span><span class="text">CSS file for custom theme</span></label>
-        <input id="customThemeFile" type="file" />        
+        <button id="customThemeButton"><span class="icon"></span><span class="text">Select CSS file</span></button>
+        <input id="customThemeFile" type="text" data-insert="background-image" placeholder="file path"/>
+        <button class="resetInput" data-input-id="imageBg"><span class="icon"></span><span class="text">Reset</span></button>
     </div>
     
     <div class="buttonRow">
