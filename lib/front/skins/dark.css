@@ -1,0 +1,15 @@
+:root {
+    --color-bg: black;
+    --color-text: white;
+    --color-border: white;
+    --color-icon: white;
+    --color-scrollbar-bg: white;
+    --color-scrollbar-thumb: grey;
+    --color-editor-bg: #555555;
+    --color-editor-text: whitesmoke;
+    --color-button-bg: black;
+    --color-button-text: white;
+    --color-html-bg: black;
+    --colot-html-text: white;
+}
+

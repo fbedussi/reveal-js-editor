@@ -1,3 +1,25 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: var(--color-scrollbar-bg);
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: var(--color-scrollbar-thumb); 
+}
+
+* {
+    border-color: var(--color-border);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -6,11 +28,8 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: white;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 body {
@@ -30,6 +49,8 @@ textarea, input, div { outline: none; }
 
 button {
   padding: 0;
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
 }
 
 label {
@@ -56,6 +77,7 @@ input[type="number"] {
   width: 2em;
   height: 2em;
   vertical-align: middle;
+  fill: var(--color-icon);
 }
 
 .button-text {
@@ -75,7 +97,7 @@ input[type="number"] {
 }
 
 .tab {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px var(--color-border);
   height: 3.5em;
 }
 
@@ -83,7 +105,7 @@ input[type="number"] {
   display: inline-block;
   text-transform: uppercase;
   padding: 1em;
-  border: solid 1px black;
+  border: solid 1px var(--color-border);
   border-radius: 3px 3px 0 0;
   border-bottom: none;
   margin: 0 0 0 0.5em;
@@ -102,18 +124,21 @@ input[type="number"] {
   border: none;
   background-color: rgb(240, 240, 240);
   font-family: monospace;
-  border-right: solid 1px black;
-  /*white-space: pre;*/
+  border-right: solid 1px var(--color-border);
+  background: var(--color-editor-bg);
+  color: var(--color-editor-text);
 }
 
 .rendered-html section {
-  border: solid 1px black;
+  background-color: var(--color-html-bg);
+  color: var(--color-html-text);
+  border: solid 1px var(--color-border);
   padding: 1em;
   margin-bottom: 2em;
 }
 
 .rendered-html .notes {
-  border-top: solid 1px black;
+  border-top: solid 1px var(--color-border);
 }
 
 .preview {
