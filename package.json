@@ -33,7 +33,7 @@
     "workshop"
   ],
   "license": "MIT",
-  "main": "lib/back/main.js",
+  "main": "lib/main.js",
   "private": false,
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
   },
   "scripts": {
     "package": "electron-packager . 'remedi'",
+    "package-overwrite": "electron-packager . 'remedi' --overwrite",
     "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
     "start": "electron ."
   }
