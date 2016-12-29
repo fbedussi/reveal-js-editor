@@ -51,6 +51,17 @@ button {
   padding: 0;
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
+  border-color: var(--color-button-border);
+  outline:  var(--color-outline);
+}
+
+button:active {
+    background-color: var(--color-button-text);
+    color: var(--color-button-bg);
+}
+
+button:active .icon {
+    fill: currentColor;
 }
 
 label {
@@ -96,12 +107,22 @@ input[type="number"] {
   flex-direction: column;
 }
 
-.tab {
+.tabContainer {
   border-bottom: solid 1px var(--color-border);
   height: 3.5em;
 }
 
-.tab p {
+.mdTab {
+    background-color: var(--color-mdTab-bg);
+    color: var(--color-mdTab-text);
+}
+
+.htmlTab {
+    background-color: var(--color-htmlTab-bg);
+    color: var(--color-htmlTab-text);
+}
+
+.tab {
   display: inline-block;
   text-transform: uppercase;
   padding: 1em;
@@ -129,8 +150,13 @@ input[type="number"] {
   color: var(--color-editor-text);
 }
 
-.rendered-html section {
+.rendered-html {
   background-color: var(--color-html-bg);
+  color: var(--color-html-text);
+}
+
+.rendered-html section {
+
   color: var(--color-html-text);
   border: solid 1px var(--color-border);
   padding: 1em;

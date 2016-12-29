@@ -1,15 +1,27 @@
 :root {
-    --color-bg: black;
-    --color-text: white;
-    --color-border: white;
-    --color-icon: white;
-    --color-scrollbar-bg: white;
-    --color-scrollbar-thumb: grey;
-    --color-editor-bg: #555555;
-    --color-editor-text: whitesmoke;
-    --color-button-bg: black;
-    --color-button-text: white;
-    --color-html-bg: black;
-    --colot-html-text: white;
+    --color-dark1: #14212B;
+    --color-dark2: #293845;
+    --color-light1: #D9D7AC;
+    --color-light2: #8F8164;
+    --color-accent: #4F6373;
+    
+    --color-bg: var(--color-light1);
+    --color-text: var(--color-dark1);
+    --color-border: var(--color-light2);
+    --color-icon: var(--color-accent);
+    --color-scrollbar-bg: var(--color-light1);
+    --color-scrollbar-thumb: var(--color-light2);
+    --color-editor-bg: var(--color-dark1);
+    --color-editor-text: var(--color-light1);
+    --color-mdTab-bg: var(--color-dark1);
+    --color-mdTab-text: var(--color-light1);
+    --color-button-bg: var(--color-light1);;
+    --color-button-text: var(--color-dark1);
+    --color-button-border: transparent;
+    --color-html-bg: var(--color-dark2);
+    --color-html-text: var(--color-light2);
+    --color-htmlTab-bg: var(--color-dark2);
+    --color-htmlTab-text: var(--color-light1);
 }
+
 
