@@ -109,7 +109,6 @@ input[type="number"] {
 
 .tabContainer {
   border-bottom: solid 1px var(--color-border);
-  height: 3.5em;
 }
 
 .mdTab {
