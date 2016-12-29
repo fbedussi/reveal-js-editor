@@ -1,5 +1,5 @@
 {
-  "name": "reveal-js-editor",
+  "name": "Remedi",
   "description": "A cross platform editor to author reveal.js presentation in markdown",
   "version": "1.0.0",
   "author": {
@@ -8,7 +8,7 @@
     "url": "http://www.francescobedussi.it"
   },
   "bugs": {
-    "url": "https://github.com/fbedussi/reveal-md/issues"
+    "url": "https://github.com/fbedussi/reveal-js-editor/issues"
   },
   "dependencies": {
     "electron-spellchecker": "^0.6.1",
@@ -34,13 +34,13 @@
   ],
   "license": "MIT",
   "main": "lib/back/main.js",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/fbedussi/reveal-md.git"
+    "url": "git://github.com/fbedussi/reveal-js-editor.git"
   },
   "scripts": {
-    "package": "electron-packager . 'Reveak Editor'",
+    "package": "electron-packager . 'remedi'",
     "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
     "start": "electron ."
   }

@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.989949"
-     inkscape:cx="120.692"
-     inkscape:cy="287.343"
+     inkscape:cx="-56.5899"
+     inkscape:cy="206.531"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,40 +57,34 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-159.97,-156.2)">
-    <circle
-       style="fill:#00ac80;fill-opacity:1;stroke:none;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none"
-       id="path4136"
-       cx="352.827"
-       cy="349.057"
-       r="192.857" />
     <rect
-       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#666666;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect4142"
-       width="244.457"
-       height="158.594"
-       x="230.598"
-       y="260.387"
+       width="341.668"
+       height="221.661"
+       x="181.992"
+       y="208.853"
        ry="0" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect4138"
-       width="273.751"
-       height="13.132"
-       x="215.951"
-       y="253.317"
-       ry="4.81992" />
+       width="382.611"
+       height="18.3541"
+       x="161.521"
+       y="198.972"
+       ry="6.73662" />
     <rect
-       ry="4.81992"
-       y="412.921"
-       x="215.951"
-       height="13.132"
-       width="273.751"
+       ry="6.73662"
+       y="422.044"
+       x="161.521"
+       height="18.3541"
+       width="382.611"
        id="rect4144"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.5;stroke-miterlimit:4;stroke-dasharray:none" />
     <rect
        ry="4.81992"
-       y="346.261"
-       x="-466.458"
+       y="345.251"
+       x="-483.834"
        height="13.132"
        width="45.4566"
        id="rect4154"
@@ -98,7 +92,7 @@
        transform="matrix(0,-1,1,0,0,0)" />
     <g
        id="g4160"
-       transform="translate(-0.505806,-9.3724)">
+       transform="translate(-2.52611,8.00329)">
       <rect
          ry="4.81992"
          y="-93.1852"
@@ -119,7 +113,7 @@
          ry="4.81992" />
     </g>
     <g
-       transform="matrix(0.183974,0,0,0.183974,260.83,247.679)"
+       transform="matrix(0.294587,0,0,0.294587,205.518,172.362)"
        id="g6"
        style="fill:#a02c2c">
       <g
