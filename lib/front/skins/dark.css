@@ -17,7 +17,9 @@
     --color-mdTab-text: var(--color-light1);
     --color-button-bg: var(--color-light1);;
     --color-button-text: var(--color-dark1);
-    --color-button-border: transparent;
+    --color-button-border: var(--color-accent);
+    --color-button-bg--hover: var(--color-light2);
+    --color-button-text--hover: #C9C79C;
     --color-html-bg: var(--color-dark2);
     --color-html-text: var(--color-light2);
     --color-htmlTab-bg: var(--color-dark2);
