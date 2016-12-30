@@ -51,8 +51,13 @@ button {
   padding: 0;
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
-  border-color: var(--color-button-border);
+  border: solid 1px var(--color-button-border);
   outline:  var(--color-outline);
+}
+
+button:hover {
+    background-color: var(--color-button-bg--hover);
+    color: var(--color-button-text--hover);
 }
 
 button:active {
