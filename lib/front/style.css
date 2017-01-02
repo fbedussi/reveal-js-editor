@@ -125,6 +125,10 @@ label {
     display: block;
 }
 
+input[type="checkbox"] + label, input[type="radio"] + label {
+    display: inline-block;
+}
+
 input[type="number"] {
     width: 5em;
 }
