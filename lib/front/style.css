@@ -1,119 +1,167 @@
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 ::-webkit-scrollbar-track {
     border-radius: 0;
     background: var(--color-scrollbar-bg);
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 0;
-    background: var(--color-scrollbar-thumb); 
+    border-radius: var(--color-scrollbar-thumb-radius);
+    background: linear-gradient(to right, var(--color-scrollbar-thumb), var(--color-scrollbar-thumb2));
+    border: solid 1px val(--color-scrollbar-thumb-border);
 }
 
 * {
     border-color: var(--color-border);
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-body, input {
-  font: menu;
+body,
+input {
+    font: menu;
 }
 
 form {
-  padding: 1em;
+    padding: 1em;
 }
 
-textarea, input, div { outline: none; }
-
-button {
-  padding: 0;
-  background-color: var(--color-button-bg);
-  color: var(--color-button-text);
-  border: solid 1px var(--color-button-border);
-  outline:  var(--color-outline);
+textarea,
+input,
+div {
+    outline: none;
 }
 
-button:hover {
-    background-color: var(--color-button-bg--hover);
-    color: var(--color-button-text--hover);
+button, select {
+    padding: 0;
+    background-image: linear-gradient(to bottom, var(--color-button-bg), var(--color-button-bg2));
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    color: var(--color-button-text);
+    border: solid 1px transparent;
+    box-shadow: 0 0 0 1px var(--color-button-shadow);
+    outline: var(--color-outline);
+    border-radius: var(--button-border-radius);
 }
 
-button:active {
-    background-color: var(--color-button-text);
-    color: var(--color-button-bg);
-}
-
-button:active .icon {
+button .icon {
     fill: currentColor;
 }
 
+.button-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5em;
+}
+
+textarea, input[type="text"], input[type="number"], input[type="color"] {
+    border-right: solid 1px var(--color-input-border);
+    box-shadow: 0 0 3px var(--color-input-shadow) inset;
+    background: var(--color-input-bg);
+    color: var(--color-input-text);
+    padding: 0.5em;
+    border-radius: var(--input-border-radius);
+    vertical-align: middle;
+}
+
+select {
+    padding: 0.5em;
+}
+
+input[type="color"] {
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, var(--color-checkbox-bg), var(--color-checkbox-bg2));
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: var(--input-border-radius);
+    vertical-align: middle;
+    border: solid 1px var(--color-checkbox-border);
+    box-shadow: 0 0 1px var(--color-checkbox-shadow) var(--color-checkbox-shadow-inset);
+    position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 70%;
+    height: 40%;
+    border: solid 2px transparent;
+    border-left-color: var(--color-checkbox-mark);
+    border-bottom-color: var(--color-checkbox-mark);
+    transform: rotate(-45deg);
+}
+
 label {
-  display: block;
+    display: block;
 }
 
 input[type="number"] {
-  width: 5em;
+    width: 5em;
 }
 
 .editor {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .controls {
-  padding: 0.5em;
-  position: relative;
-  width: 100%;
+    padding: 0.5em;
+    position: relative;
+    width: 100%;
 }
 
 .icon {
-  width: 2em;
-  height: 2em;
-  vertical-align: middle;
-  fill: var(--color-icon);
-}
-
-.button-text {
-  vertical-align: middle;
-  padding: 0 0.5em;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    fill: var(--color-icon);
 }
 
 .content {
-  display: flex;
-  flex: 1;
+    display: flex;
+    flex: 1;
 }
 
-.mdContainer, .htmlContainer {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+.mdContainer,
+.htmlContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .tabContainer {
-  border-bottom: solid 1px var(--color-border);
+    border-bottom: solid 1px var(--color-border);
 }
 
 .mdTab {
@@ -127,73 +175,75 @@ input[type="number"] {
 }
 
 .tab {
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 1em;
-  border: solid 1px var(--color-border);
-  border-radius: 3px 3px 0 0;
-  border-bottom: none;
-  margin: 0 0 0 0.5em;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1em;
+    background-image: linear-gradient(to bottom, var(--color-button-bg), var(--color-button-bg2));
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    color: var(--color-button-text);
+    border: solid 1px var(--color-button-shadow);
+    outline: var(--color-outline);
+    border-radius: var(--button-border-radius) var(--button-border-radius) 0 0;
+    border-bottom: none;
+    margin: 0 0 0 0.5em;
 }
 
-.raw-markdown, .rendered-html {
-  padding: 1em;
-  overflow-y: scroll;
-  width: 100%;
-  flex: 1;
-  display: block;
+.raw-markdown,
+.rendered-html {
+    padding: 1em;
+    overflow-y: scroll;
+    width: 100%;
+    flex: 1;
+    display: block;
 }
 
 .raw-markdown {
-  font-size: 1.1em;
-  border: none;
-  background-color: rgb(240, 240, 240);
-  font-family: monospace;
-  border-right: solid 1px var(--color-border);
-  background: var(--color-editor-bg);
-  color: var(--color-editor-text);
+    font-size: 1.1em;
+    border: none;
+    font-family: monospace;
+    background: var(--color-editor-bg);
+    color: var(--color-editor-text);
 }
 
 .rendered-html {
-  background-color: var(--color-html-bg);
-  color: var(--color-html-text);
+    background-color: var(--color-html-bg);
+    color: var(--color-html-text);
 }
 
 .rendered-html section {
-
-  color: var(--color-html-text);
-  border: solid 1px var(--color-border);
-  padding: 1em;
-  margin-bottom: 2em;
+    color: var(--color-html-text);
+    border: solid 1px var(--color-border);
+    padding: 1em;
+    margin-bottom: 2em;
 }
 
 .rendered-html .notes {
-  border-top: solid 1px var(--color-border);
+    border-top: solid 1px var(--color-border);
 }
 
 .preview {
-  display: none;
+    display: none;
 }
 
 .previewOn .editor {
-  display: none;
+    display: none;
 }
 
 .previewOn .preview {
-  display: block;
-  height: 100%;
+    display: block;
+    height: 100%;
 }
 
 .inputWrapper {
-  margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .parallaxBackgroundInputWrapper {
-  display: inline-block;
-  margin-right: 2em;
+    display: inline-block;
+    margin-right: 2em;
 }
 
 #keyboard {
-  width: 100%;
-  height: 10em;
+    width: 100%;
+    height: 10em;
 }

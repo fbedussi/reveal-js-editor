@@ -1,29 +1,64 @@
 :root {
-    --color-dark1: #14212B;
-    --color-dark2: #293845;
-    --color-light1: #D9D7AC;
-    --color-light2: #8F8164;
-    --color-accent: #4F6373;
+    --color-bg: #2f3236;
+    --color-text: #abacad;
+    --color-accent: #308bc1;
+  
+    /*Scrollbar*/
+    --scrollbar-width: 1em;
+    --color-scrollbar-bg: #2a2d30;
+    --color-scrollbar-thumb: #474b4f;
+    --color-scrollbar-thumb2: #37393d;
+    --color-scrollbar-thumb-border: #565a60;
+    --color-scrollbar-border: #18191b;
+    --color-scrollbar-thumb-radius: calc(var(--scrollbar-width) / 2);
     
-    --color-bg: var(--color-light1);
-    --color-text: var(--color-dark1);
-    --color-border: var(--color-light2);
-    --color-icon: var(--color-accent);
-    --color-scrollbar-bg: var(--color-light1);
-    --color-scrollbar-thumb: var(--color-light2);
-    --color-editor-bg: var(--color-dark1);
-    --color-editor-text: var(--color-light1);
-    --color-mdTab-bg: var(--color-dark1);
-    --color-mdTab-text: var(--color-light1);
-    --color-button-bg: var(--color-light1);;
-    --color-button-text: var(--color-dark1);
-    --color-button-border: var(--color-accent);
-    --color-button-bg--hover: var(--color-light2);
-    --color-button-text--hover: #C9C79C;
-    --color-html-bg: var(--color-dark2);
-    --color-html-text: var(--color-light2);
-    --color-htmlTab-bg: var(--color-dark2);
-    --color-htmlTab-text: var(--color-light1);
+    --color-border: #25272b;
+    --color-shadow: #212324;
+    
+    
+    /*Editor & preview HTML*/
+    --color-editor-bg: #292b2e;
+    --color-html-bg: #4a4e52;
+    
+    /*Buttons*/
+    --color-button-bg: #4b4e53;
+    --color-button-bg2: #393b3e;
+    --color-button-text: #b3b4b6;
+    --color-button-border: #60646b;
+    --color-button-border2: #393b3f;
+    --color-button-shadow: var(--color-shadow);
+    --button-border-radius: 3px;
+    
+    /*Inputs*/
+    --color-input-bg: #282a2e;
+    --color-input-text: #a1a2a4;
+    --color-input-shadow: #222325;
+    --color-input-border: #18191b;
+    --input-border-radius: 3px;
+    --color-checkbox-bg: #4b4e53;
+    --color-checkbox-bg2: #343739;
+    --color-checkbox-border: #494b4f;
+    --color-checkbox-shadow: #232629;
+    --color-checkbox-mark: var(--color-accent);
+}
+
+button:hover {
+    --color-button-bg: #53575b;
+    --color-button-bg2: #3f4145;
+}
+
+button:active {
+    --color-button-bg: #333539;
+    --color-button-bg2: #45494d;
+    --color-button-shadow: #3c3f44;
+}
+
+input[type="checkbox"]:checked {
+    --color-checkbox-bg: #2a2b2e;
+    --color-checkbox-bg2: #2a2b2e;
+    --color-checkbox-border: #18191b;
+    --color-checkbox-shadow: #202224;
+    --color-checkbox-shadow-inset: inset;
 }
 
 
