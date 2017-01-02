@@ -18,6 +18,10 @@
     "markdown-it-container": "^2.0.0",
     "markdown-it-modify-token": "^1.0.2",
     "markdown-it-synapse-table": "^1.0.6",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
     "reveal.js": "^3.3.0"
   },
   "devDependencies": {
