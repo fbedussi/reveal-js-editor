@@ -42,6 +42,7 @@
   "scripts": {
     "package": "electron-packager . 'remedi'",
     "package-overwrite": "electron-packager . 'remedi' --overwrite",
+    "package-overwrite-asar": "electron-packager . 'remedi' --overwrite --asar",
     "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
     "start": "electron ."
   }
