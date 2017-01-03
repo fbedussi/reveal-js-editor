@@ -5,12 +5,18 @@
 ::-webkit-scrollbar-track {
     border-radius: 0;
     background: var(--color-scrollbar-bg);
+    border: solid 1px var(--color-scrollbar-border);
+    /*box-shadow: 0 0 1px var(--color-scrollbar-border);*/
+    border-radius: var(--color-scrollbar-thumb-radius);
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: var(--color-scrollbar-thumb-radius);
     background: linear-gradient(to right, var(--color-scrollbar-thumb), var(--color-scrollbar-thumb2));
-    border: solid 1px val(--color-scrollbar-thumb-border);
+    border: solid 1px var(--color-scrollbar-thumb-border);
+    /*box-shadow: 0 0 1px var(--color-scrollbar-thumb-border);*/
+    box-sizing: border-box;
+    width: 100%;
 }
 
 * {
@@ -59,12 +65,13 @@ div {
 button, select {
     padding: 0;
     background-image: linear-gradient(to bottom, var(--color-button-bg), var(--color-button-bg2));
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 3px var(--color-button-textShadow);
     color: var(--color-button-text);
-    border: solid 1px transparent;
+    border: solid 1px var(--color-button-border);
     box-shadow: 0 0 0 1px var(--color-button-shadow);
     outline: var(--color-outline);
     border-radius: var(--button-border-radius);
+    vertical-align: middle;
 }
 
 button .icon {
@@ -77,9 +84,13 @@ button .icon {
     padding: 0.5em;
 }
 
+.hideButtonText .button-text {
+    display: none;
+}
+
 textarea, input[type="text"], input[type="number"], input[type="color"] {
-    border-right: solid 1px var(--color-input-border);
-    box-shadow: 0 0 3px var(--color-input-shadow) inset;
+    border: solid 1px var(--color-input-border);
+    box-shadow: 0 0 1px var(--color-input-shadow) inset;
     background: var(--color-input-bg);
     color: var(--color-input-text);
     padding: 0.5em;
@@ -183,9 +194,10 @@ input[type="number"] {
     text-transform: uppercase;
     padding: 1em;
     background-image: linear-gradient(to bottom, var(--color-button-bg), var(--color-button-bg2));
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 3px var(--color-button-textShadow);
     color: var(--color-button-text);
-    border: solid 1px var(--color-button-shadow);
+    border: solid 1px var(--color-button-border);
+    box-shadow: 0 0 1px var(--color-button-shadow);
     outline: var(--color-outline);
     border-radius: var(--button-border-radius) var(--button-border-radius) 0 0;
     border-bottom: none;

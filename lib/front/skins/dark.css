@@ -2,32 +2,27 @@
     --color-bg: #2f3236;
     --color-text: #abacad;
     --color-accent: #308bc1;
-  
+    --color-border: #25272b;
+    --color-shadow: #212324;
+    
     /*Scrollbar*/
     --scrollbar-width: 1em;
     --color-scrollbar-bg: #2a2d30;
     --color-scrollbar-thumb: #474b4f;
     --color-scrollbar-thumb2: #37393d;
-    --color-scrollbar-thumb-border: #565a60;
-    --color-scrollbar-border: #18191b;
+    --color-scrollbar-thumb-border: #4c5054;
+    --color-scrollbar-border: #191a1c;
     --color-scrollbar-thumb-radius: calc(var(--scrollbar-width) / 2);
-    
-    --color-border: #25272b;
-    --color-shadow: #212324;
-    
-    
-    /*Editor & preview HTML*/
-    --color-editor-bg: #292b2e;
-    --color-html-bg: #4a4e52;
     
     /*Buttons*/
     --color-button-bg: #4b4e53;
     --color-button-bg2: #393b3e;
     --color-button-text: #b3b4b6;
-    --color-button-border: #60646b;
-    --color-button-border2: #393b3f;
+    --color-button-border: transparent;
+    /*--color-button-border2: #393b3f;*/
     --color-button-shadow: var(--color-shadow);
     --button-border-radius: 3px;
+    --color-button-textShadow: rgba(0, 0, 0, 0.25);
     
     /*Inputs*/
     --color-input-bg: #282a2e;
@@ -40,6 +35,10 @@
     --color-checkbox-border: #494b4f;
     --color-checkbox-shadow: #232629;
     --color-checkbox-mark: var(--color-accent);
+    
+    /*Editor & preview HTML*/
+    --color-editor-bg: #292b2e;
+    --color-html-bg: #4a4e52;
 }
 
 button:hover {
