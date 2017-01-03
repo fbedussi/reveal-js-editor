@@ -1,0 +1,67 @@
+:root {
+    --color-bg: #f0f0f0;
+    --color-text: #6c6c6c;
+    --color-accent: #8fbadc;
+    --color-border: #c3c3c4;
+    --color-shadow: #212324;
+    
+    /*Scrollbar*/
+    --scrollbar-width: 1em;
+    --color-scrollbar-bg: #efefef;
+    --color-scrollbar-thumb: #e7e7e7;
+    --color-scrollbar-thumb2: #d7d7d7;
+    --color-scrollbar-thumb-border: #b8b8b8;
+    --color-scrollbar-border: #bcbcbd;
+    --color-scrollbar-thumb-radius: calc(var(--scrollbar-width) / 2);
+    
+    /*Buttons*/
+    --color-button-bg: #ececec;
+    --color-button-bg2: #dfdfdf;
+    --color-button-text: #7f7f7f;
+    --color-button-border: #c0c1c1;
+    /*--color-button-border2: #393b3f;*/
+    --color-button-shadow: #e0e0e0;
+    --button-border-radius: 3px;
+    --color-button-textShadow: transparent;
+    
+    /*Inputs*/
+    --color-input-bg: #dedede;
+    --color-input-text: #7b7b7b;
+    --color-input-shadow: #cdcdcd;
+    --color-input-border: #c3c3c4;
+    --input-border-radius: 3px;
+    --color-checkbox-bg: #ececec;
+    --color-checkbox-bg2: #dcdcdc;
+    --color-checkbox-border: #c3c3c4;
+    --color-checkbox-shadow: #d7d7d7;
+    --color-checkbox-mark: var(--color-accent);
+    
+    /*Editor & preview HTML*/
+    --color-editor-bg: #e2e2e2;
+    --color-editor-text: #7c7c7c;
+    --color-html-bg: #e8e8e8;
+}
+
+button:hover {
+    --color-button-bg: #eeeeee;
+    --color-button-bg2: #e2e2e2;
+    --color-button-shadow: #efefef;
+}
+
+button:active {
+    --color-button-bg: #dcdcdc;
+    --color-button-bg2: #ebebeb;
+    --color-button-shadow: #efefef;
+}
+
+input[type="checkbox"]:checked {
+    --color-checkbox-bg: #d9d9d9;
+    --color-checkbox-bg2: #d9d9d9;
+    --color-checkbox-shadow: #d9d9d9;
+    --color-checkbox-shadow-inset: inset;
+}
+
+
+
+
+
