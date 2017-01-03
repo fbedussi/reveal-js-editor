@@ -25,16 +25,25 @@
     "reveal.js": "^3.3.0"
   },
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "devtron": "^1.3.0",
     "electron": "^1.4.3",
     "electron-packager": "^8.1.0",
     "electron-rebuild": "^1.4.0",
     "spectron": "^3.4.0",
-    "standard": "^8.4.0"
+    "standard": "^8.4.0",
+    "webpack": "^1.14.0"
   },
   "keywords": [
-    "electron",
-    "workshop"
+    "reveal",
+    "markdown",
+    "editor",
+    "presentation",
+    "html"
   ],
   "license": "MIT",
   "main": "lib/main.js",
@@ -48,6 +57,7 @@
     "package-overwrite": "electron-packager . 'remedi' --overwrite",
     "package-overwrite-asar": "electron-packager . 'remedi' --overwrite --asar",
     "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "webpack --watch"
   }
 }
