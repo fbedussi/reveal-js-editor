@@ -17,7 +17,5 @@ module.exports={
       }
     ]
   },
-  plugins: [
-   new webpack.IgnorePlugin(new RegExp("^(fs|ipc|electron)$"))
-  ]  
+  terget: 'electron-renderer'
 }
