@@ -1,21 +1,29 @@
-var webpack = require('webpack');
+var webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 
-module.exports={
-  entry:'./lib/front/renderer.js',
-  output:{
-    filename:'./lib/front/renderer-bundle.js'
+var options = {
+  entry: './lib/front/renderer.js',
+  output: {
+    path: './lib/front/',
+    filename: 'renderer-bundle.js'
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         loader: 'babel',
-        query:{
-          presets:['react','es2015']
+        query: {
+          presets: ['es2015', 'react']
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass!'
       }
     ]
-  },
-  terget: 'electron-renderer'
-}
+  }
+};
+
+options.target = webpackTargetElectronRenderer(options);
+
+module.exports = options;
