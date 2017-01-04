@@ -144,6 +144,11 @@ input[type="number"] {
     width: 5em;
 }
 
+
+#app, #app > div {
+    height: 100%;
+}
+
 .editor {
     height: 100%;
     display: flex;
