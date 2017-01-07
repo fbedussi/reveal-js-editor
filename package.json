@@ -20,6 +20,7 @@
     "markdown-it-synapse-table": "^1.0.6",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-helmet": "^3.3.0",
     "react-redux": "^5.0.1",
     "redux": "^3.6.0",
     "reveal.js": "^3.3.0"
@@ -34,6 +35,7 @@
     "electron": "^1.4.3",
     "electron-packager": "^8.1.0",
     "electron-rebuild": "^1.4.0",
+    "json-loader": "^0.5.4",
     "spectron": "^3.4.0",
     "standard": "^8.4.0",
     "webpack": "^1.14.0",

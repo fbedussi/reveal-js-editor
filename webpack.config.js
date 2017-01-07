@@ -1,4 +1,5 @@
 var webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
+//var json = require('json-loader!./file.json');
 
 var options = {
   entry: './lib/front/renderer.js',
@@ -19,9 +20,13 @@ var options = {
       {
         test: /\.scss$/,
         loader: 'style!css!sass!'
+      },{
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
-  }
+  },
+  devtool: 'source-map'
 };
 
 options.target = webpackTargetElectronRenderer(options);
