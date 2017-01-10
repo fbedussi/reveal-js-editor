@@ -1,3 +1,4 @@
 node_modules/
 .vscode/
 remedi-linux-x64/
+lib/front/renderer-bundle.js*
