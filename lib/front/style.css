@@ -149,8 +149,18 @@ input[type="number"] {
     height: 100%;
 }
 
+.application {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainWrapper {
+    flex: 1;
+}
+
 .editor {
     height: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }

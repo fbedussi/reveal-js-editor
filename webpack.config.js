@@ -2,7 +2,7 @@ var webpackTargetElectronRenderer = require('webpack-target-electron-renderer');
 //var json = require('json-loader!./file.json');
 
 var options = {
-  entry: './lib/front/renderer.js',
+  entry: './lib/front/src/renderer.js',
   output: {
     path: './lib/front/',
     filename: 'renderer-bundle.js'
