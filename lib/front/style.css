@@ -155,7 +155,7 @@ input[type="number"] {
 }
 
 .mainWrapper {
-    flex: 1;
+    height: calc(100% - 3em)
 }
 
 .editor {
@@ -167,6 +167,7 @@ input[type="number"] {
 
 .controls {
     padding: 0.5em;
+    height: 3em;
     position: relative;
     width: 100%;
 }
