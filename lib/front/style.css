@@ -144,6 +144,9 @@ input[type="number"] {
     width: 5em;
 }
 
+.hide {
+    display: none !important;
+}
 
 #app, #app > div {
     height: 100%;
@@ -170,6 +173,10 @@ input[type="number"] {
     height: 3em;
     position: relative;
     width: 100%;
+}
+
+.notificationArea {
+    display: inline-block;
 }
 
 .icon {
