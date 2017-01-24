@@ -1,0 +1,37 @@
+root = true
+
+[*]
+end_of_line = crlf
+charset = utf-8
+
+[*.{config,json,xml}]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{proj,props,sln,targets}]
+indent_style = tab
+trim_trailing_whitespace = true
+
+[*.{kproj,csproj,ps1,resx,rst}]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[NuGet.Config]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{cshtml,php,js,scss,rb,cs,config}]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+curly_bracket_next_line = true
+spaces_around_operators = true
+spaces_around_brackets = outside
+indent_brace_style = K&R
+
+[*.{md,markdown}]
+trim_trailing_whitespace = false
