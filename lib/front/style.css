@@ -292,11 +292,11 @@ input[type="number"] {
 }
 
 .bgOptionsPanel {
-    width: var(--left-panel-width);
+    width: 250px;
     height: 100vh;
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -250px;
     transition: transform 0.4s;
 }
 
