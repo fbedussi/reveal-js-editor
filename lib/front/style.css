@@ -1,3 +1,7 @@
+: root {
+    --left-panel-width: 200px;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -285,4 +289,26 @@ input[type="number"] {
 #keyboard {
     width: 100%;
     height: 10em;
+}
+
+.bgOptionsPanel {
+    width: var(--left-panel-width);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: transform 0.4s;
+}
+
+.leftPanelOpen .bgOptionsPanel {
+    transform: translateX(250px);
+}
+
+.workarea {
+    transition: transform 0.4s;
+    height: 100%;
+}
+
+.leftPanelOpen .workarea {
+    transform: translateX(250px);
 }
