@@ -1,5 +1,5 @@
-: root {
-    --left-panel-width: 200px;
+:root {
+    --left-panel-width: 500px;
 }
 
 ::-webkit-scrollbar {
@@ -292,16 +292,16 @@ input[type="number"] {
 }
 
 .bgOptionsPanel {
-    width: 250px;
+    width: var(--left-panel-width);
     height: 100vh;
     position: absolute;
     top: 0;
-    left: -250px;
+    left: calc(0px - var(--left-panel-width));
     transition: transform 0.4s;
 }
 
 .leftPanelOpen .bgOptionsPanel {
-    transform: translateX(250px);
+    transform: translateX(var(--left-panel-width));
 }
 
 .workarea {
@@ -310,5 +310,5 @@ input[type="number"] {
 }
 
 .leftPanelOpen .workarea {
-    transform: translateX(250px);
+    transform: translate3d(var(--left-panel-width), 0, 0);
 }
