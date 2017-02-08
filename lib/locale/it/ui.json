@@ -127,5 +127,7 @@
     "Background web page": "Pagina web di sfondo",
     "Select video": "Seleziona il video",
     "Select image": "Seleziona l'immagine",
-    "Change color scheme": "Cambia i colori"
+    "Change color scheme": "Cambia i colori",
+	"Interface": "Interfaccia",
+	"Show button text": "Mostra il testo dei pulsanti"
 }

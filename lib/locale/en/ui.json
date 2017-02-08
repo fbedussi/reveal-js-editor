@@ -101,7 +101,7 @@
     "Hides the address bar on mobile devices": "Nascondi la barra degli indirizzi sui dispositivi mobili",
     "Opens links in an iframe preview overlay": "Apri i link in un iframe di preview in sovraimpressione",
     "Other configuration...": "Altre configurazioni...",
-    "Set language": "Imposta lingua",
+    "Set language": "Set language",
     "Services": "Servizi",
     "Auto play velocity (0 to disable)": "Velocità autoplay (0 per disabilitare)",
     "Number of slides preloaded in lazy load mode": "Numero di slide precaricate quando è attivo il lazy load",
@@ -125,7 +125,9 @@
     "Background video loop": "Video di background in loop",
     "Background video muted": "Video di sfondo muto",
     "Background web page": "Pagina web di sfondo",
-    "Select video": "Seleziona il video",
-    "Select image": "Seleziona l'immagine",
-    "Change color scheme": "Cambia i colori"
+    "Select video": "Select video",
+    "Select image": "Select image",
+    "Change color scheme": "Change color scheme",
+	"Interface": "Interface",
+	"Show button text": "Show button text"
 }
