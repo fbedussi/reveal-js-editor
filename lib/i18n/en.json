@@ -131,5 +131,6 @@
 	"Interface": "Interface",
 	"Show button text": "Show button text",
 	"Manage custom themes": "Manage custom themes",
-	"Custom theme css": "Custom theme css"
+	"Custom theme css": "Custom theme css",
+	"Load a custom theme css file": "Load a custom theme css file"
 }

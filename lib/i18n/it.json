@@ -131,5 +131,6 @@
 	"Interface": "Interfaccia",
 	"Show button text": "Mostra il testo dei pulsanti",
 	"Manage custom themes": "Gestione temi personalizzati",
-	"Custom theme css": "Css tema personalizzato"
+	"Custom theme css": "Css tema personalizzato",
+	"Load a custom theme css file": "Carica un file css di un tema personalizzato"
 }
