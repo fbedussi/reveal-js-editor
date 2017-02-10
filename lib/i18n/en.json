@@ -129,5 +129,7 @@
     "Select image": "Select image",
     "Change color scheme": "Change color scheme",
 	"Interface": "Interface",
-	"Show button text": "Show button text"
+	"Show button text": "Show button text",
+	"Manage custom themes": "Manage custom themes",
+	"Custom theme css": "Custom theme css"
 }

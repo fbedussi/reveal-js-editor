@@ -129,5 +129,7 @@
     "Select image": "Seleziona l'immagine",
     "Change color scheme": "Cambia i colori",
 	"Interface": "Interfaccia",
-	"Show button text": "Mostra il testo dei pulsanti"
+	"Show button text": "Mostra il testo dei pulsanti",
+	"Manage custom themes": "Gestione temi personalizzati",
+	"Custom theme css": "Css tema personalizzato"
 }

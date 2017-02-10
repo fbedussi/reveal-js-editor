@@ -314,7 +314,7 @@ input[type="number"] {
     transform: translate3d(var(--left-panel-width), 0, 0);
 }
 
-.confPanel {
+.rightPanel {
     width: var(--right-panel-width);
     height: 100vh;
     position: absolute;
@@ -323,10 +323,14 @@ input[type="number"] {
     transition: transform 0.4s;
 }
 
-.rightPanelOpen .confPanel {
+.confPanelOpen .confPanel {
     transform: translateX(calc(0px - var(--left-panel-width)));
 }
 
 .rightPanelOpen .workarea {
     transform: translate3d(calc(0px - var(--left-panel-width)), 0, 0);
+}
+
+.themesPanelOpen .themesPanel {
+    transform: translateX(calc(0px - var(--left-panel-width)));
 }
