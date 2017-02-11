@@ -265,11 +265,7 @@ input[type="number"] {
     border-top: solid 1px var(--color-border);
 }
 
-.preview {
-    display: none;
-}
-
-.previewOn .editor {
+.preview, .previewOn .controls, .previewOn .mainWrapper {
     display: none;
 }
 
