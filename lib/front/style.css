@@ -288,6 +288,10 @@ input[type="number"] {
     height: 10em;
 }
 
+.leftPanel, .rightPanel {
+    padding: 1.5em;
+}
+
 .bgOptionsPanel {
     width: var(--left-panel-width);
     height: 100vh;
@@ -329,4 +333,11 @@ input[type="number"] {
 
 .themesPanelOpen .themesPanel {
     transform: translateX(calc(0px - var(--left-panel-width)));
+}
+
+.customCssInput {
+    width: 100%;
+    min-height: 7em;
+    display: block;
+    margin-bottom: 1em; 
 }
