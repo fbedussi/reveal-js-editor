@@ -1,3 +1,8 @@
+:root {
+    --left-panel-width: 500px;
+    --right-panel-width: var(--left-panel-width);
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -144,16 +149,39 @@ input[type="number"] {
     width: 5em;
 }
 
+.hide {
+    display: none !important;
+}
+
+#app, #app > div {
+    height: 100%;
+}
+
+.application {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainWrapper {
+    height: calc(100% - 3em)
+}
+
 .editor {
     height: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .controls {
     padding: 0.5em;
+    height: 3em;
     position: relative;
     width: 100%;
+}
+
+.notificationArea {
+    display: inline-block;
 }
 
 .icon {
@@ -237,11 +265,7 @@ input[type="number"] {
     border-top: solid 1px var(--color-border);
 }
 
-.preview {
-    display: none;
-}
-
-.previewOn .editor {
+.preview, .previewOn .controls, .previewOn .mainWrapper {
     display: none;
 }
 
@@ -262,4 +286,58 @@ input[type="number"] {
 #keyboard {
     width: 100%;
     height: 10em;
+}
+
+.leftPanel, .rightPanel {
+    padding: 1.5em;
+}
+
+.bgOptionsPanel {
+    width: var(--left-panel-width);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: calc(0px - var(--left-panel-width));
+    transition: transform 0.4s;
+}
+
+.workarea {
+    transition: transform 0.4s;
+    height: 100%;
+}
+
+.leftPanelOpen .bgOptionsPanel {
+    transform: translateX(var(--left-panel-width));
+}
+
+.leftPanelOpen .workarea {
+    transform: translate3d(var(--left-panel-width), 0, 0);
+}
+
+.rightPanel {
+    width: var(--right-panel-width);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: calc(0px - var(--right-panel-width));
+    transition: transform 0.4s;
+}
+
+.confPanelOpen .confPanel {
+    transform: translateX(calc(0px - var(--left-panel-width)));
+}
+
+.rightPanelOpen .workarea {
+    transform: translate3d(calc(0px - var(--left-panel-width)), 0, 0);
+}
+
+.themesPanelOpen .themesPanel {
+    transform: translateX(calc(0px - var(--left-panel-width)));
+}
+
+.customCssInput {
+    width: 100%;
+    min-height: 7em;
+    display: block;
+    margin-bottom: 1em; 
 }
