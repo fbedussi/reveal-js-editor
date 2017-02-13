@@ -22,6 +22,7 @@
     "react-dom": "^15.4.1",
     "react-helmet": "^3.3.0",
     "react-redux": "^5.0.1",
+    "react-shadow": "^1.1.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "reveal.js": "^3.3.0"
@@ -57,7 +58,7 @@
     "url": "git://github.com/fbedussi/reveal-js-editor.git"
   },
   "scripts": {
-    "package": "electron-packager . 'remedi'",
+    "package": "zshelectron-packager . 'remedi'",
     "package-overwrite": "electron-packager . 'remedi' --overwrite",
     "package-overwrite-asar": "electron-packager . 'remedi' --overwrite --asar",
     "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
