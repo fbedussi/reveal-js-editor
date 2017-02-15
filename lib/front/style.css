@@ -77,6 +77,26 @@ button, select {
     outline: var(--color-outline);
     border-radius: var(--button-border-radius);
     vertical-align: middle;
+    cursor: pointer;
+}
+
+.flatButton {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    background-image: none;
+    background-color: transparent;
+}
+
+.closeBtn {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.closeBtn svg {
+    display: inline-block;
 }
 
 button .icon {
@@ -158,8 +178,12 @@ input[type="number"] {
 }
 
 .application {
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+
+.application.show {
+    display: flex;
 }
 
 .mainWrapper {
