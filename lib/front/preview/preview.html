@@ -35,6 +35,8 @@
             if (event.data.configuration) {
                 initReveal(event.data.configuration);
             }
+
+            event.source.postMessage('init', event.origin);
         }, false);
     </script>
 </body>
