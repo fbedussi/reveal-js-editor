@@ -27,6 +27,12 @@ var options = {
 			}
 		]
 	},
+	resolve: {
+		"alias": {
+			"react": "preact-compat",
+				"react-dom": "preact-compat"
+		}
+	},
 	devtool: 'source-map'
 };
 
