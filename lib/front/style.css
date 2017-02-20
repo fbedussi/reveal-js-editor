@@ -199,14 +199,37 @@ input[type="number"] {
 
 .controls {
     padding: 0.5em;
-    height: 3em;
+    height: 3.5em;
     position: relative;
     width: 100%;
+    display: flex;
 }
 
+/*Notifications*/
 .notificationArea {
     display: inline-block;
+    flex: 1;
+    text-align: right;
 }
+
+.notification {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+}
+
+.notification-warning {
+    background-color: orange;
+}
+
+.notification-success {
+    background-color: green;
+}
+
+.notification-error {
+    background-color: red;
+}
+/*Notification end*/
 
 .icon {
     width: 2em;
