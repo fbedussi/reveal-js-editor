@@ -17,19 +17,28 @@
 
     <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
     <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
+    
     <script src="initReveal.js"></script>
     <script>
         var themeCss = document.querySelector('#themeCss');
         var customCss = document.querySelector('#customCss');
         var slides = document.querySelector('.slides');
-        
+        var html;
+        var currentThemeCssHref;
+
         window.addEventListener("message", function (event) {
-            if (event.data.html) {
+            if (event.data.html !== html) {
                 slides.innerHTML = event.data.html;
+                html = event.data.html;
             }
 
             var themeFolder = event.data.customTheme? '../../../lib/customThemes' : '../../../node_modules/reveal.js/css/theme';
-            themeCss.href = `${themeFolder}/${event.data.currentTheme}.css`;
+            var themeCssHref = `${themeFolder}/${event.data.currentTheme}.css`;
+
+            if (themeCssHref !== currentThemeCssHref) {
+                themeCss.href = themeCssHref;
+                currentThemeCssHref = themeCssHref;
+            }
             customCss.innerHTML = event.data.customCss;
             
             if (event.data.configuration) {
