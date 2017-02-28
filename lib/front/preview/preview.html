@@ -32,7 +32,7 @@
                 html = event.data.html;
             }
 
-            var themeFolder = event.data.customTheme? '../../../lib/customThemes' : '../../../node_modules/reveal.js/css/theme';
+            var themeFolder = event.data.customTheme? event.data.customThemePath : '../../../node_modules/reveal.js/css/theme';
             var themeCssHref = `${themeFolder}/${event.data.currentTheme}.css`;
 
             if (themeCssHref !== currentThemeCssHref) {
