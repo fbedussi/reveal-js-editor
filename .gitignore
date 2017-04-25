@@ -1,3 +1,4 @@
 node_modules/
 .vscode/
 remedi-linux-x64/
+npm-debug.log
