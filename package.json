@@ -18,6 +18,8 @@
     "markdown-it-container": "^2.0.0",
     "markdown-it-modify-token": "^1.0.2",
     "markdown-it-synapse-table": "^1.0.6",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-helmet": "^3.3.0",
@@ -33,6 +35,7 @@
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
     "babel-preset-react": "^6.16.0",
+    "cross-env": "^5.0.0",
     "devtron": "^1.3.0",
     "electron": "^1.4.3",
     "electron-packager": "^8.1.0",
@@ -58,11 +61,12 @@
     "url": "git://github.com/fbedussi/reveal-js-editor.git"
   },
   "scripts": {
-    "package": "electron-packager . 'remedi'",
-    "package-overwrite": "electron-packager . 'remedi' --overwrite",
-    "package-overwrite-asar": "electron-packager . 'remedi' --overwrite --asar",
+    "package": "electron-packager . remedi --out=dist",
+    "package-overwrite": "electron-packager . remedi --overwrite",
+    "package-overwrite-asar": "electron-packager . remedi --overwrite --asar",
     "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
     "start": "electron .",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "prod": "cross-env NODE_ENV=production webpack --define process.env.NODE_ENV=\"production\" --config webpack.prod.config.js"
   }
 }

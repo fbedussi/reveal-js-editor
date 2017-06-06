@@ -27,7 +27,13 @@ var options = {
 			}
 		]
 	},
-	devtool: 'source-map'
+	devtool: 'source-map',
+	resolve: {
+		"alias": {
+			"react": "preact-compat",
+			"react-dom": "preact-compat"
+		}
+	}
 };
 
 options.target = webpackTargetElectronRenderer(options);

@@ -3,3 +3,5 @@ node_modules/
 remedi-linux-x64/
 npm-debug.log
 remedi-config.json
+dist/
+lib/remedi-config.json
