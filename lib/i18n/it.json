@@ -134,5 +134,9 @@
 	"Custom theme css": "Css tema personalizzato",
 	"Load a custom theme css file": "Carica un file css di un tema personalizzato",
 	"Custom CSS": "CSS personalizzato",
-    "Code block": "Blocco di codice"
+    "Code block": "Blocco di codice",
+    "Saving": "Salvataggio in corso",
+    "Project saved": "Progetto salvato",
+    "Saving error": "Errore nel salvataggio",
+    "Open file error": "Errore nell'aprire il file"
 }

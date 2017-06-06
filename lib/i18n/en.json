@@ -134,5 +134,9 @@
 	"Custom theme css": "Custom theme css",
 	"Load a custom theme css file": "Load a custom theme css file",
 	"Custom CSS": "Custom CSS",
-    "Code block": "Code block"
+    "Code block": "Code block",
+    "Saving": "Saving",
+    "Project saved": "Project saved",
+    "Saving error": "Saving error",
+    "Open file error": "Open file error"
 }
