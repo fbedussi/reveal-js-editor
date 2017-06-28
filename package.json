@@ -64,7 +64,7 @@
     "package": "electron-packager . remedi --out=dist",
     "package-overwrite": "electron-packager . remedi --overwrite",
     "package-overwrite-asar": "electron-packager . remedi --overwrite --asar",
-    "package-all": "electron-packager . 'Reveal Editor' --platform=all --arch=all",
+    "package-all": "electron-packager . remedi --platform=all --arch=all --out=dist",
     "start": "electron .",
     "dev": "webpack --watch",
     "prod": "cross-env NODE_ENV=production webpack --define process.env.NODE_ENV=\"production\" --config webpack.prod.config.js"
