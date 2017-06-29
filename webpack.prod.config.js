@@ -47,13 +47,7 @@ var options = {
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
         })
     ],
-	devtool: 'cheap-module-source-map',
-	resolve: {
-		"alias": {
-			"react": "preact-compat",
-			"react-dom": "preact-compat"
-		}
-	}
+	devtool: 'cheap-module-source-map'
 };
 
 options.target = webpackTargetElectronRenderer(options);
