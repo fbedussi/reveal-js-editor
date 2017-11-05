@@ -3,6 +3,8 @@
     "Open a markdown file...": "Apri un file markdown...",
     "Open markdown file": "Apri file markdown",
     "Save presentation...": "Salva la presentazione...",
+	"Save presentation as...": "Salva la presentazione con nome...",
+	"Save this presentation": "Salva la presentazione corrente",
     "Save presentation": "Salva la presentazione",
     "Save markdown only...": "Salva solo il markdown...",
     "Save HTML only...": "Salva solo l'HTML",
