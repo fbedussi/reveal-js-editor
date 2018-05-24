@@ -308,6 +308,10 @@ input[type="number"] {
     margin-bottom: 2em;
 }
 
+.rendered-html img {
+    max-width: 100%;
+}
+
 .rendered-html .notes {
     border-top: solid 1px var(--color-border);
 }
