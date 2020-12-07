@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>REMEDI - Reveal.js markdown editor - Preview</title>
-    <link rel="stylesheet" href="../../../node_modules/reveal.js/css/reveal.css" type="text/css"/>
-    <link rel="stylesheet" href="../../../node_modules/reveal.js/lib/css/zenburn.css" type="text/css"/>
+    <link rel="stylesheet" href="../../../node_modules/reveal.js/dist/reveal.css" type="text/css"/>
+    <link rel="stylesheet" href="../../../node_modules/reveal.js/plugin/highlight/zenburn.css" type="text/css"/>
     <link id="themeCss" rel="stylesheet" type="text/css"/>
     <style id="customCss"></style>
 </head>
@@ -15,8 +15,11 @@
         <div class="slides"></div>
     </div>
 
-    <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script>
-    <script src="../../../node_modules/reveal.js/js/reveal.js"></script>
+    <!-- <script src="../../../node_modules/reveal.js/lib/js/head.min.js"></script> -->
+    <script src="../../../node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="../../../node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="../../../node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <script src="../../../node_modules/reveal.js/plugin/zoom/zoom.js"></script>
     
     <script src="initReveal.js"></script>
     <script>
@@ -32,7 +35,7 @@
                 html = event.data.html;
             }
 
-            var themeFolder = event.data.customTheme? event.data.customThemePath : '../../../node_modules/reveal.js/css/theme';
+            var themeFolder = event.data.customTheme? event.data.customThemePath : '../../../node_modules/reveal.js/dist/theme';
             var themeCssHref = `${themeFolder}/${event.data.currentTheme}.css`;
 
             if (themeCssHref !== currentThemeCssHref) {
