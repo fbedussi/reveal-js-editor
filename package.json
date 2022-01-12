@@ -12,7 +12,7 @@
 	},
 	"dependencies": {
 		"fs-extra": "^1.0.0",
-		"markdown-it": "^8.1.0",
+		"markdown-it": "^12.3.2",
 		"markdown-it-container": "^2.0.0",
 		"markdown-it-modify-token": "^1.0.2",
 		"markdown-it-synapse-table": "^1.0.6",
