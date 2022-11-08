@@ -28,7 +28,7 @@
 	"devDependencies": {
 		"babel": "^6.5.2",
 		"babel-core": "^6.21.0",
-		"babel-loader": "^6.2.10",
+		"babel-loader": "^9.1.0",
 		"babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
 		"babel-preset-react": "^6.16.0",
 		"cross-env": "^5.0.0",
@@ -39,7 +39,7 @@
 		"json-loader": "^0.5.4",
 		"spectron": "^3.4.0",
 		"standard": "^8.4.0",
-		"webpack": "^1.14.0",
+		"webpack": "^5.74.0",
 		"webpack-target-electron-renderer": "^0.4.0"
 	},
 	"keywords": [
